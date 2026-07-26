@@ -48,3 +48,23 @@ CREATE TABLE applications (
         REFERENCES jobs(job_id)
         ON DELETE RESTRICT
 );
+
+CREATE TABLE application_events (
+    event_id SERIAL PRIMARY KEY,
+    application_id INTEGER NOT NULL,
+    event_date TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    event_type TEXT NOT NULL,
+    contact_name TEXT,
+    contact_email TEXT,
+    communication_channel TEXT,
+    summary TEXT NOT NULL,
+    next_action TEXT,
+    next_action_date DATE,
+    completed BOOLEAN NOT NULL DEFAULT FALSE,
+    notes TEXT,
+
+    CONSTRAINT fk_events_application
+        FOREIGN KEY (application_id)
+        REFERENCES applications(application_id)
+        ON DELETE CASCADE
+);

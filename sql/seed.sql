@@ -37,3 +37,22 @@ VALUES (
     CURRENT_DATE + 14,
     'Test application record'
 );
+
+INSERT INTO application_events (
+    application_id,
+    event_type,
+    contact_name,
+    communication_channel,
+    summary,
+    next_action,
+    next_action_date
+)
+VALUES (
+    1,
+    'Application submitted',
+    NULL,
+    'Employer website',
+    'Submitted application for the Junior BI Analyst role.',
+    'Follow up if no response',
+    CURRENT_DATE + 14
+);
