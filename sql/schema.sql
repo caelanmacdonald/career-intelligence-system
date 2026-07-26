@@ -150,3 +150,12 @@ CREATE TABLE IF NOT EXISTS vacancies (
 CREATE UNIQUE INDEX IF NOT EXISTS
     vacancies_vacancy_url_unique
 ON vacancies (vacancy_url);
+
+ALTER TABLE applications
+ADD COLUMN IF NOT EXISTS vacancy_id INTEGER
+REFERENCES vacancies(vacancy_id);
+
+CREATE UNIQUE INDEX IF NOT EXISTS
+    applications_vacancy_id_unique
+ON applications (vacancy_id)
+WHERE vacancy_id IS NOT NULL;
