@@ -29,3 +29,22 @@ CREATE TABLE jobs (
         REFERENCES companies(company_id)
         ON DELETE RESTRICT
 );
+
+CREATE TABLE applications (
+    application_id SERIAL PRIMARY KEY,
+    job_id INTEGER NOT NULL,
+    application_date DATE NOT NULL DEFAULT CURRENT_DATE,
+    application_status TEXT NOT NULL DEFAULT 'Applied',
+    current_stage TEXT,
+    cv_version TEXT,
+    cover_letter_used BOOLEAN NOT NULL DEFAULT FALSE,
+    follow_up_date DATE,
+    response_date DATE,
+    rejection_reason TEXT,
+    notes TEXT,
+
+    CONSTRAINT fk_applications_job
+        FOREIGN KEY (job_id)
+        REFERENCES jobs(job_id)
+        ON DELETE RESTRICT
+);

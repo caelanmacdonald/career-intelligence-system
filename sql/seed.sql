@@ -18,3 +18,22 @@ VALUES (
     'Unknown',
     'https://example.com/job'
 );
+
+INSERT INTO applications (
+    job_id,
+    application_status,
+    current_stage,
+    cv_version,
+    cover_letter_used,
+    follow_up_date,
+    notes
+)
+VALUES (
+    1,
+    'Applied',
+    'Application submitted',
+    'BI CV v1',
+    TRUE,
+    CURRENT_DATE + 14,
+    'Test application record'
+);
