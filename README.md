@@ -168,7 +168,7 @@ Application Events
 
 ```powershell
 
-python .\\python\\import\_target\_employers.py
+python .\python\import_target_employers.py
 
 ```
 
@@ -180,7 +180,7 @@ python .\\python\\import\_target\_employers.py
 
 ```powershell
 
-python .\\python\\check\_jobs.py
+python .\python\check_jobs.py
 
 ```
 
@@ -192,7 +192,7 @@ python .\\python\\check\_jobs.py
 
 ```powershell
 
-python .\\python\\add\_vacancy.py
+python .\python\add_vacancy.py
 
 ```
 
@@ -204,7 +204,7 @@ python .\\python\\add\_vacancy.py
 
 ```powershell
 
-python .\\python\\list\_vacancies.py
+python .\python\list_vacancies.py
 
 ```
 
