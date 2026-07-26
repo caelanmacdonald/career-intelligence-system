@@ -132,21 +132,21 @@ Current entities:
 
 Target Employers
 
-&#x20;       │
+             │
 
-&#x20;       ▼
+             ▼
 
 Vacancies
 
-&#x20;       │
+             │
 
-&#x20;       ▼
+             ▼
 
 Applications
 
-&#x20;       │
+             │
 
-&#x20;       ▼
+             ▼
 
 Application Events
 
