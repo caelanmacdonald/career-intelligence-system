@@ -74,17 +74,17 @@ career-intelligence-dashboard/
 
 │   ├── db.py
 
-│   ├── import\_target\_employers.py
+│   ├── import_target_employers.py
 
-│   ├── enrich\_employers.py
+│   ├── enrich_employers.py
 
-│   ├── check\_jobs.py
+│   ├── check_jobs.py
 
-│   ├── add\_vacancy.py
+│   ├── add_vacancy.py
 
-│   ├── list\_vacancies.py
+│   ├── list_vacancies.py
 
-│   ├── add\_application.py
+│   ├── add_application.py
 
 │   └── ...
 
@@ -94,17 +94,17 @@ career-intelligence-dashboard/
 
 │   ├── schema.sql
 
-│   ├── analysis\_queries.sql
+│   ├── analysis_queries.sql
 
-│   └── test\_queries.sql
+│   └── test_queries.sql
 
 │
 
 ├── data/
 
-│   ├── target\_companies.csv
+│   ├── target_companies.csv
 
-│   └── employer\_links.csv
+│   └── employer_links.csv
 
 │
 
@@ -132,21 +132,21 @@ Current entities:
 
 Target Employers
 
-&#x20;       │
+             │
 
-&#x20;       ▼
+             ▼
 
 Vacancies
 
-&#x20;       │
+             │
 
-&#x20;       ▼
+             ▼
 
 Applications
 
-&#x20;       │
+             │
 
-&#x20;       ▼
+             ▼
 
 Application Events
 
@@ -168,7 +168,7 @@ Application Events
 
 ```powershell
 
-python .\\python\\import\_target\_employers.py
+python .\python\import_target_employers.py
 
 ```
 
@@ -180,7 +180,7 @@ python .\\python\\import\_target\_employers.py
 
 ```powershell
 
-python .\\python\\check\_jobs.py
+python .\python\check_jobs.py
 
 ```
 
@@ -192,7 +192,7 @@ python .\\python\\check\_jobs.py
 
 ```powershell
 
-python .\\python\\add\_vacancy.py
+python .\python\add_vacancy.py
 
 ```
 
@@ -204,7 +204,7 @@ python .\\python\\add\_vacancy.py
 
 ```powershell
 
-python .\\python\\list\_vacancies.py
+python .\python\list_vacancies.py
 
 ```
 
